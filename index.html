@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Typing Speed Test</h1>
+
+    <section class="controls">
+      <label>Mode:
+        <select id="mode-select">
+          <option value="alphabet">ALPHABET</option>
+          <option value="word" selected>WORD</option>
+          <option value="sentence">SENTENCE</option>
+        </select>
+      </label>
+
+      <label>Duration (sec):
+        <input id="duration" type="number" min="10" max="600" value="60">
+      </label>
+
+      <button id="start-btn">Start</button>
+      <button id="reset-btn">Reset</button>
+    </section>
+
+    <section class="display">
+      <div id="target" class="target" aria-live="polite"></div>
+      <input id="input" class="input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="1000" placeholder="Start test to type...">
+    </section>
+
+    <section class="stats">
+      <div>Time: <span id="time">60</span>s</div>
+      <div>WPM: <span id="wpm">0</span></div>
+      <div>Accuracy: <span id="acc">100</span>%</div>
+      <div>Errors: <span id="errors">0</span></div>
+      <div>Typed: <span id="typed">0</span></div>
+    </section>
+
+    <section class="hint">
+      <small>Made By Gunjesh❤️</small>
+    </section>
+  </main>
+
+  <script src="undex.js"></script>
+</body>
+</html>
